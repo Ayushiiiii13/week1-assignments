@@ -9,6 +9,17 @@
 
 ---
 
+## 🌐 Live Production Deployments (Vercel)
+
+| Project | Live Production URL | Deployment Status |
+| :--- | :--- | :--- |
+| **🚀 Portfolio Website (Montgomery Edition)** | **[portfolio-website-nine-peach-11.vercel.app](https://portfolio-website-nine-peach-11.vercel.app)** | 🟢 Active |
+| **📄 Printable Resume View** | **[portfolio-website-nine-peach-11.vercel.app/assets/resume-view.html](https://portfolio-website-nine-peach-11.vercel.app/assets/resume-view.html)** | 🟢 Active |
+| **💼 Business Landing Page** | **[business-landing-page-three-mu.vercel.app](https://business-landing-page-three-mu.vercel.app)** | 🟢 Active |
+| **🎨 CSS Challenge Lab** | **[css-challenge-phi.vercel.app](https://css-challenge-phi.vercel.app)** | 🟢 Active |
+
+---
+
 ## 📌 Repository Overview
 
 This repository contains the complete set of deliverables for **Week 1 of the WeIntern Web Development Internship**. The objective of this week's assignments is to build a rock-solid foundation in semantic HTML5 markup, responsive CSS3 architectures (Flexbox & CSS Grid), fluid layout systems, subtle micro-interactions, and vanilla JavaScript functionality without reliance on external UI frameworks.
