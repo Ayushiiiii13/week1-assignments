@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CSS Challenge Showcase - Flexbox card layout, CSS Grid dashboard, and micro-animations for WeIntern Week 1.">
+  <title>CSS Challenge Lab | Alex Chen</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Hero Header -->
+  <header class="challenge-hero">
+    <div class="container">
+      <span class="challenge-badge">Task 3: Modern CSS Masterclass</span>
+      <h1>Practical Layout &amp; Animation Showcase</h1>
+      <p>
+        A dedicated testbed demonstrating fluid Flexbox alignments, two-dimensional CSS Grid architectures, and subtle keyframe animations.
+      </p>
+    </div>
+  </header>
+
+  <!-- Sticky Quick Nav -->
+  <nav class="challenge-nav-bar" aria-label="Challenge sections">
+    <div class="container">
+      <ul class="challenge-nav-list">
+        <li><a href="#flexbox-task">1. Flexbox Layout (Testimonials)</a></li>
+        <li><a href="#grid-task">2. CSS Grid (Analytics Dashboard)</a></li>
+        <li><a href="#animation-task">3. Keyframe Animations</a></li>
+        <li><a href="../portfolio-website/index.html">&larr; Back to Portfolio</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ====================================================================
+         TASK 3.1: FLEXBOX LAYOUT (3 Cards in a row, stacking on mobile)
+         ==================================================================== -->
+    <section class="lab-section" id="flexbox-task" aria-labelledby="flexbox-title">
+      <div class="container">
+        
+        <div class="lab-header">
+          <div class="lab-tag">Exercise 01 • Flexbox Layout</div>
+          <h2 id="flexbox-title" class="lab-title">Responsive Testimonial Card Row</h2>
+          <p class="lab-desc">
+            Constructed with <span class="code-pill">display: flex</span>, <span class="code-pill">justify-content: space-between</span>, <span class="code-pill">align-items: stretch</span>, and <span class="code-pill">gap: 2rem</span>. Renders 3 equal-height cards on desktop and stacks into a single vertical column on mobile screens under 820px.
+          </p>
+
+          <div style="margin-top: 1.25rem;">
+            <button id="toggle-flex-mode" class="anim-btn-interactive" style="padding: 0.55rem 1.2rem; font-size: 0.85rem;">
+              🔄 Toggle Mobile Stack Simulation (Column/Row)
+            </button>
+          </div>
+        </div>
+
+        <!-- The 3-Card Flexbox Container -->
+        <div class="flexbox-container">
+          
+          <!-- Card 1 -->
+          <article class="flex-card">
+            <div class="flex-card-header">
+              <div class="flex-avatar blue">DK</div>
+              <div class="flex-client-info">
+                <h4>David Kumar</h4>
+                <p>Engineering Lead at DevMetrics</p>
+              </div>
+            </div>
+            <div class="flex-card-body">
+              <p>
+                "The semantic structure and clean Flexbox alignment made integrating this component into our core product effortlessly fast. Spacing remains perfectly balanced across all screen widths."
+              </p>
+            </div>
+            <div class="flex-card-footer">
+              <div class="flex-stars" aria-label="5 stars">★★★★★</div>
+              <span class="flex-badge">Verified Review</span>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="flex-card">
+            <div class="flex-card-header">
+              <div class="flex-avatar purple">SN</div>
+              <div class="flex-client-info">
+                <h4>Sneha Nambiar</h4>
+                <p>Senior Product Designer</p>
+              </div>
+            </div>
+            <div class="flex-card-body">
+              <p>
+                "Clean visual hierarchy, comfortable line heights, and smooth hover feedback. It's rare to see junior engineers implement pure CSS responsive patterns this rigorously."
+              </p>
+            </div>
+            <div class="flex-card-footer">
+              <div class="flex-stars" aria-label="5 stars">★★★★★</div>
+              <span class="flex-badge">Verified Review</span>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="flex-card">
+            <div class="flex-card-header">
+              <div class="flex-avatar teal">AT</div>
+              <div class="flex-client-info">
+                <h4>Arjun Trivedi</h4>
+                <p>CTO at StartupSphere</p>
+              </div>
+            </div>
+            <div class="flex-card-body">
+              <p>
+                "Zero bloated dependencies. Just high-performance, accessible CSS. The cards maintain uniform height regardless of content length using flex stretch."
+              </p>
+            </div>
+            <div class="flex-card-footer">
+              <div class="flex-stars" aria-label="5 stars">★★★★★</div>
+              <span class="flex-badge">Verified Review</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         TASK 3.2: CSS GRID LAYOUT (Dashboard / Gallery with 6+ Items)
+         ==================================================================== -->
+    <section class="lab-section" id="grid-task" aria-labelledby="grid-title">
+      <div class="container">
+        
+        <div class="lab-header">
+          <div class="lab-tag">Exercise 02 • CSS Grid Architecture</div>
+          <h2 id="grid-title" class="lab-title">Two-Dimensional Analytics Dashboard Grid</h2>
+          <p class="lab-desc">
+            Constructed using <span class="code-pill">display: grid</span> and <span class="code-pill">grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))</span> with a 6-item card system. Demonstrates responsive column wrapping without media query hacks.
+          </p>
+        </div>
+
+        <div class="grid-container">
+          
+          <!-- Grid Item 1 (Featured) -->
+          <article class="grid-card featured">
+            <div class="grid-card-top">
+              <div class="grid-icon-pill">⚡</div>
+              <span style="font-size: 0.8rem; font-weight: 700; background: rgba(255,255,255,0.2); padding: 0.2rem 0.6rem; border-radius: 99px;">Live Pulse</span>
+            </div>
+            <div class="grid-metric-value">99.82%</div>
+            <h3 class="grid-metric-title">Global System Uptime</h3>
+            <p class="grid-metric-sub">Zero downtime incidents recorded across 14 edge regions over the last 90 rolling days.</p>
+            <div class="grid-bar-track" style="background: rgba(255,255,255,0.2);">
+              <div class="grid-bar-fill" style="width: 99%; background: #38bdf8;"></div>
+            </div>
+          </article>
+
+          <!-- Grid Item 2 -->
+          <article class="grid-card">
+            <div class="grid-card-top">
+              <div class="grid-icon-pill" style="color: #2563eb; background: #dbeafe;">👥</div>
+              <span style="font-size: 0.8rem; color: #16a34a; font-weight: 700;">+24.6%</span>
+            </div>
+            <div class="grid-metric-value" style="color: var(--text-main);">48,210</div>
+            <h3 class="grid-metric-title">Active Weekly Visitors</h3>
+            <p class="grid-metric-sub">Consistent month-over-month organic engagement growth driven by accessible semantic SEO.</p>
+            <div class="grid-bar-track">
+              <div class="grid-bar-fill" style="width: 78%; background: #2563eb;"></div>
+            </div>
+          </article>
+
+          <!-- Grid Item 3 -->
+          <article class="grid-card">
+            <div class="grid-card-top">
+              <div class="grid-icon-pill" style="color: #059669; background: #d1fae5;">⏱️</div>
+              <span style="font-size: 0.8rem; color: #16a34a; font-weight: 700;">Optimal</span>
+            </div>
+            <div class="grid-metric-value" style="color: var(--text-main);">0.68s</div>
+            <h3 class="grid-metric-title">First Contentful Paint</h3>
+            <p class="grid-metric-sub">Achieved through zero-runtime vanilla CSS, native fonts, and optimized SVG vector assets.</p>
+            <div class="grid-bar-track">
+              <div class="grid-bar-fill" style="width: 92%; background: #10b981;"></div>
+            </div>
+          </article>
+
+          <!-- Grid Item 4 -->
+          <article class="grid-card">
+            <div class="grid-card-top">
+              <div class="grid-icon-pill" style="color: #d97706; background: #fef3c7;">🛡️</div>
+              <span style="font-size: 0.8rem; color: #d97706; font-weight: 700;">Grade AAA</span>
+            </div>
+            <div class="grid-metric-value" style="color: var(--text-main);">100/100</div>
+            <h3 class="grid-metric-title">Lighthouse Accessibility</h3>
+            <p class="grid-metric-sub">Full keyboard navigation focus rings, descriptive ARIA attributes, and high contrast ratios.</p>
+            <div class="grid-bar-track">
+              <div class="grid-bar-fill" style="width: 100%; background: #f59e0b;"></div>
+            </div>
+          </article>
+
+          <!-- Grid Item 5 -->
+          <article class="grid-card">
+            <div class="grid-card-top">
+              <div class="grid-icon-pill" style="color: #7c3aed; background: #ede9fe;">📦</div>
+              <span style="font-size: 0.8rem; color: #7c3aed; font-weight: 700;">-64% Size</span>
+            </div>
+            <div class="grid-metric-value" style="color: var(--text-main);">14.2 KB</div>
+            <h3 class="grid-metric-title">Bundle Transfer Weight</h3>
+            <p class="grid-metric-sub">Ultra lean payload eliminates client bundle parsing overhead and saves user mobile bandwidth.</p>
+            <div class="grid-bar-track">
+              <div class="grid-bar-fill" style="width: 85%; background: #8b5cf6;"></div>
+            </div>
+          </article>
+
+          <!-- Grid Item 6 -->
+          <article class="grid-card">
+            <div class="grid-card-top">
+              <div class="grid-icon-pill" style="color: #dc2626; background: #fee2e2;">📱</div>
+              <span style="font-size: 0.8rem; color: #16a34a; font-weight: 700;">100% Valid</span>
+            </div>
+            <div class="grid-metric-value" style="color: var(--text-main);">375px+</div>
+            <h3 class="grid-metric-title">Responsive Breakpoints</h3>
+            <p class="grid-metric-sub">Tested thoroughly across small mobile, tablets, laptops, and ultra-wide monitor displays.</p>
+            <div class="grid-bar-track">
+              <div class="grid-bar-fill" style="width: 95%; background: #ef4444;"></div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         TASK 3.3: ANIMATION SUITE TASK (Buttons, Spinners, Lift, Underlines)
+         ==================================================================== -->
+    <section class="lab-section" id="animation-task" aria-labelledby="anim-title">
+      <div class="container">
+        
+        <div class="lab-header">
+          <div class="lab-tag">Exercise 03 • CSS Animations &amp; Transitions</div>
+          <h2 id="anim-title" class="lab-title">Subtle Micro-Interactions &amp; Keyframes</h2>
+          <p class="lab-desc">
+            Polished animations that enhance visual feedback without distraction. Features smooth easing curves, hardware-accelerated transforms, and keyframes.
+          </p>
+        </div>
+
+        <div class="animation-grid">
+          
+          <!-- Animation 1: Shimmer Button Hover -->
+          <article class="anim-card">
+            <div>
+              <h3 class="anim-card-title">1. Button Shimmer &amp; Lift</h3>
+              <p class="anim-card-desc">CSS gradient sweep with transform translateY</p>
+            </div>
+            <div class="anim-stage">
+              <button class="anim-btn-interactive">Hover Over Me &rarr;</button>
+            </div>
+            <span class="code-pill">transition: transform 0.25s ease</span>
+          </article>
+
+          <!-- Animation 2: Dual Color Spinner -->
+          <article class="anim-card">
+            <div>
+              <h3 class="anim-card-title">2. Dual-Tone Loading Spinner</h3>
+              <p class="anim-card-desc">Smooth keyframe 360-degree rotation</p>
+            </div>
+            <div class="anim-stage">
+              <div class="spinner-demo" aria-label="Loading content spinner"></div>
+            </div>
+            <span class="code-pill">@keyframes spin { 360deg }</span>
+          </article>
+
+          <!-- Animation 3: 3D Depth Card Lift -->
+          <article class="anim-card">
+            <div>
+              <h3 class="anim-card-title">3. 3D Card Depth Lift</h3>
+              <p class="anim-card-desc">Cubic-bezier lift with shadow projection</p>
+            </div>
+            <div class="anim-stage">
+              <div class="lift-card-demo">
+                <div style="font-weight: 700; color: #4338ca; margin-bottom: 4px;">Interactive Tile</div>
+                <div style="font-size: 0.825rem; color: #64748b;">Hover to inspect 3D tilt</div>
+              </div>
+            </div>
+            <span class="code-pill">cubic-bezier(0.34, 1.56, 0.64, 1)</span>
+          </article>
+
+          <!-- Animation 4: Expanding Underline Link -->
+          <article class="anim-card">
+            <div>
+              <h3 class="anim-card-title">4. Animated Underline Link</h3>
+              <p class="anim-card-desc">Expanding pseudo-element on hover</p>
+            </div>
+            <div class="anim-stage">
+              <a href="#flexbox-task" class="animated-nav-link">Explore Documentation</a>
+            </div>
+            <span class="code-pill">::after { width: 100% }</span>
+          </article>
+
+          <!-- Animation 5: Radar Pulse Indicator -->
+          <article class="anim-card">
+            <div>
+              <h3 class="anim-card-title">5. Status Radar Pulse</h3>
+              <p class="anim-card-desc">Infinite ripple keyframe for live indicators</p>
+            </div>
+            <div class="anim-stage">
+              <div class="pulse-badge">
+                <span class="pulse-dot"></span>
+                <span>System Operational</span>
+              </div>
+            </div>
+            <span class="code-pill">@keyframes pulse-ring</span>
+          </article>
+
+          <!-- Animation 6: Reusable Reference -->
+          <article class="anim-card">
+            <div>
+              <h3 class="anim-card-title">6. Performance Philosophy</h3>
+              <p class="anim-card-desc">Hardware acceleration best practices</p>
+            </div>
+            <div class="anim-stage">
+              <div style="font-size: 0.9rem; color: var(--text-secondary); text-align: left; line-height: 1.5;">
+                • Only animate <strong>transform</strong> &amp; <strong>opacity</strong><br>
+                • Avoid animating width, height, or margin<br>
+                • Keep durations between <strong>200ms – 400ms</strong>
+              </div>
+            </div>
+            <span class="code-pill">will-change: transform</span>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Challenge Footer -->
+  <footer style="background-color: #0f172a; color: #94a3b8; padding: 2.5rem 0; border-top: 1px solid #1e293b; text-align: center; font-size: 0.9rem;">
+    <div class="container">
+      <p style="margin-bottom: 0.5rem; color: #ffffff; font-weight: 600;">WeIntern Web Development Internship — Week 1 Assignment</p>
+      <p>&copy; 2026 Alex Chen. Developed with semantic HTML5 &amp; modern CSS3.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

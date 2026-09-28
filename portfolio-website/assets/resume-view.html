@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayushi Rathi — Resume | Software Developer & Full Stack Developer</title>
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #2563eb;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 40px 20px;
+    }
+    .resume-wrapper {
+      max-width: 860px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 48px 56px;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      border: 1px solid var(--border);
+    }
+    .action-bar {
+      max-width: 860px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 18px;
+      background: #0f172a;
+      color: #fff;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #2563eb; }
+    .btn-outline {
+      background: transparent;
+      color: #0f172a;
+      border: 1px solid var(--border);
+    }
+    .btn-outline:hover {
+      background: #f1f5f9;
+      color: #0f172a;
+    }
+    /* Resume Styles */
+    .resume-header {
+      text-align: center;
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+    }
+    .name {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+    .subtitle {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #334155;
+      margin-bottom: 8px;
+    }
+    .contact-row {
+      font-size: 0.9rem;
+      color: #475569;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .contact-row a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .contact-row a:hover { text-decoration: underline; }
+    .section-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 4px;
+      margin-top: 18px;
+      margin-bottom: 10px;
+    }
+    .entry {
+      margin-bottom: 12px;
+    }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-weight: 700;
+      color: #0f172a;
+      font-size: 0.98rem;
+    }
+    .entry-role {
+      font-weight: 600;
+      color: #334155;
+      font-size: 0.92rem;
+      margin-bottom: 4px;
+      font-style: italic;
+    }
+    .entry-date {
+      font-size: 0.88rem;
+      color: #64748b;
+      font-weight: 500;
+    }
+    ul.bullets {
+      list-style-type: disc;
+      padding-left: 20px;
+      font-size: 0.9rem;
+      color: #334155;
+    }
+    ul.bullets li {
+      margin-bottom: 4px;
+      line-height: 1.45;
+    }
+    .skills-block p {
+      font-size: 0.9rem;
+      color: #334155;
+      margin-bottom: 5px;
+      line-height: 1.45;
+    }
+    .skills-block strong {
+      color: #0f172a;
+      font-weight: 700;
+    }
+    @media print {
+      body { background: #fff; padding: 0; }
+      .action-bar { display: none; }
+      .resume-wrapper { border: none; box-shadow: none; padding: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="action-bar">
+    <a href="../index.html" class="btn btn-outline">← Back to Portfolio</a>
+    <button class="btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+  </div>
+
+  <main class="resume-wrapper">
+    <!-- Header -->
+    <header class="resume-header">
+      <h1 class="name">AYUSHI RATHI</h1>
+      <div class="subtitle">Software Developer | Full Stack Developer | UI/UX Designer</div>
+      <div class="contact-row">
+        <span><a href="mailto:ayushirathi2912@gmail.com">ayushirathi2912@gmail.com</a></span>
+        <span>•</span>
+        <span><a href="https://github.com/Ayushiiiii13" target="_blank" rel="noopener noreferrer">github.com/Ayushiiiii13</a></span>
+        <span>•</span>
+        <span>Bengaluru, Karnataka</span>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+      <h2 class="section-title">Professional Summary</h2>
+      <p style="font-size: 0.92rem; color: #334155; line-height: 1.55;">
+        BCA student with hands-on experience delivering 3 full-stack and AI-focused applications using Python, JavaScript, React.js, Node.js, Express.js, MySQL and MongoDB. Implemented accessibility features across 3 communication modes, AI-assisted resume analysis, authentication workflows and database-backed ordering. Seeking Software Engineering, Full-Stack Development or AI Software Engineering internship opportunities.
+      </p>
+    </section>
+
+    <!-- Work Experience & Internships -->
+    <section>
+      <h2 class="section-title">Work Experience &amp; Internships</h2>
+      
+      <div class="entry">
+        <div class="entry-header">
+          <span>KD Tech Solutions, Behror</span>
+          <span class="entry-date">Apr 2025 – Jun 2025</span>
+        </div>
+        <div class="entry-role">UI/UX Designer &amp; Web Developer Intern</div>
+        <ul class="bullets">
+          <li>Created responsive UI/UX wireframes and page layouts using Figma, Canva and Elementor for client-facing web deliverables.</li>
+          <li>Developed and maintained 1 live client website, macrotechproducts.com, using WordPress; refined page structure, navigation and responsive presentation.</li>
+          <li>Implemented full-stack components across 3 backend areas—authentication, REST APIs and MySQL database integration—using Node.js and Express.js.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span>JPMorgan Chase &amp; Co. — Forage</span>
+          <span class="entry-date">2025</span>
+        </div>
+        <div class="entry-role">Software Engineering Virtual Experience Certificate</div>
+        <ul class="bullets">
+          <li>Completed a simulated fintech engineering experience covering distributed systems and Apache Kafka concepts.</li>
+          <li>Analyzed event-driven architecture scenarios and documented technical considerations across 2 core themes: messaging and system design.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <h2 class="section-title">Projects</h2>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span>Bridgeable</span>
+          <span class="entry-date">MERN Stack, Machine Learning, LLM, Speech-to-Text &amp; Sign Language</span>
+        </div>
+        <ul class="bullets">
+          <li>Engineered an accessibility-focused virtual meeting platform with 3 communication pathways: sign-language recognition, speech-to-text and text-to-speech.</li>
+          <li>Connected 1 custom sign-language detection model to a MERN video-calling interface, linking AI inference with real-time communication workflows.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span>AI-Powered Resume ATS Checker</span>
+          <span class="entry-date">Python, JavaScript, Gemini API, LLM, Prompt Engineering, NLP, RAG</span>
+        </div>
+        <ul class="bullets">
+          <li>Developed a resume-analysis pipeline covering 4 stages: document input, job-description comparison, ATS-oriented scoring and improvement recommendations.</li>
+          <li>Integrated 2 AI-focused capabilities—NLP/RAG prompting and Gemini API processing—to generate structured, job-specific resume feedback.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span>Food Delivery Web Application</span>
+          <span class="entry-date">Node.js, Express.js, MySQL</span>
+        </div>
+        <ul class="bullets">
+          <li>Built a full-stack ordering platform supporting 3 primary workflows: user authentication, menu browsing and order management.</li>
+          <li>Structured backend routes and relational database integration across 3 data areas: users, menu items and orders.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-block">
+        <p><strong>Languages:</strong> C++, Python, JavaScript, Java, TypeScript, SQL</p>
+        <p><strong>AI &amp; ML:</strong> LLMs, Generative AI, Prompt Engineering, RAG, Embeddings, Vector Databases, AI Agents, Gemini API</p>
+        <p><strong>Frontend:</strong> HTML5, CSS3, React.js, Responsive Web Design</p>
+        <p><strong>Backend &amp; Database:</strong> Node.js, Express.js, MySQL, MongoDB, REST APIs, Flask, Authentication</p>
+        <p><strong>Cloud &amp; DevOps:</strong> AWS (EC2, VPC, IAM, S3, Route 53, CloudWatch, Load Balancer)</p>
+        <p><strong>Soft Skills:</strong> Problem Solving, Team Collaboration, Communication</p>
+      </div>
+    </section>
+
+    <!-- Certifications & Training -->
+    <section>
+      <h2 class="section-title">Certifications &amp; Training</h2>
+      <ul class="bullets">
+        <li>Node.js Application Development — Infosys Springboard</li>
+        <li>Data Structures (C++) — Infosys Springboard</li>
+        <li>AI Fundamentals 2026: Safe Skills for AI — Udemy</li>
+        <li>Artificial Intelligence Ethics — Udemy</li>
+        <li>JPMorgan Chase &amp; Co. Software Engineering Virtual Experience Certificate — Forage</li>
+        <li>Internship Completion Certificate — KD Tech Solutions</li>
+      </ul>
+    </section>
+
+    <!-- Achievements -->
+    <section>
+      <h2 class="section-title">Achievements</h2>
+      <ul class="bullets">
+        <li>1st Prize, Eldorado — Christ University Central Campus</li>
+        <li>Active participant in IEEE student chapter events and technical fests, Christ University</li>
+      </ul>
+    </section>
+
+    <!-- Co-Curricular & Leadership -->
+    <section>
+      <h2 class="section-title">Co-Curricular &amp; Leadership</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <span>Samagra, CS Association</span>
+          <span class="entry-date">Management Head</span>
+        </div>
+        <p style="font-size: 0.9rem; color: #334155;">Led and coordinated student activities, events, and team management.</p>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span>Entrepreneurship Cell, Christ University</span>
+          <span class="entry-date">Event Volunteer</span>
+        </div>
+        <p style="font-size: 0.9rem; color: #334155;">Assisted in organizing and managing entrepreneurship-related events.</p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2 class="section-title">Education</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <span>Christ University, Bengaluru</span>
+          <span class="entry-date">Jun 2024 – May 2027 (Expected)</span>
+        </div>
+        <p style="font-size: 0.9rem; color: #334155; font-weight: 600;">Bachelor of Computer Applications (BCA) | 8.4 CGPA</p>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span>St. Paul Sr. Sec. School, Barmer</span>
+          <span class="entry-date">Completed</span>
+        </div>
+        <p style="font-size: 0.9rem; color: #334155;">Class XII — 91.8% | Class X — 91.6%</p>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

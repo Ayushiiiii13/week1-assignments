@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lumina Creative Agency - We design and develop responsive, high-converting digital websites and web applications for ambitious brands.">
+  <title>Lumina Creative Agency | Modern Web Design &amp; Development</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="#home" class="brand-logo" aria-label="Lumina Creative Agency Home">
+        <span class="brand-icon">L</span>
+        <span>Lumina Creative</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#about" class="nav-link">Why Lumina</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Primary Action & Mobile Menu Toggle -->
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <a href="#contact" class="btn btn-primary nav-cta-btn">Get a Free Quote</a>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="section hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span>✨</span> Award-Winning Digital Studio
+          </div>
+          <h1 id="hero-title" class="hero-title">
+            Crafting Digital Experiences That <span>Accelerate Growth</span>.
+          </h1>
+          <p class="hero-description">
+            We partner with forward-thinking businesses and startups to engineer responsive, accessible, and fast web experiences that turn casual visitors into loyal customers.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Start Your Project &rarr;</a>
+            <a href="#services" class="btn btn-secondary">Explore Services</a>
+          </div>
+
+          <!-- Trust Proof Metrics -->
+          <div class="hero-metrics">
+            <div>
+              <div class="metric-number">95+</div>
+              <div class="metric-label">Completed Projects</div>
+            </div>
+            <div>
+              <div class="metric-number">99.4%</div>
+              <div class="metric-label">Client Satisfaction</div>
+            </div>
+            <div>
+              <div class="metric-number">2.8x</div>
+              <div class="metric-label">Avg. Conversion Lift</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img src="assets/hero-graphic.svg" alt="Preview of Lumina design agency dashboard showcase" class="hero-img" width="560" height="400">
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section section-subtle" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Our Capabilities</span>
+          <h2 id="services-title" class="section-title">Specialized Services Tailored for Growth</h2>
+          <p class="section-subtitle">
+            From initial wireframing to production deployment, we deliver comprehensive web solutions built with modern standards.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Service Card 1 -->
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 20.1a1 1 0 0 0 1.25 1.25l2.49-.62C9.72 21.46 10.83 22 12 22c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-1.01 0-1.97-.24-2.83-.67l-.42-.21-1.8.45.45-1.8-.21-.42A6.94 6.94 0 0 1 5 12c0-3.86 3.14-7 7-7s7 3.14 7 7-3.14 7-7 7z"/>
+              </svg>
+            </div>
+            <h3 class="service-title">UI &amp; UX Product Design</h3>
+            <p class="service-desc">
+              Human-centered interfaces crafted with Figma and modern design systems. We focus on intuitive user journeys and high usability.
+            </p>
+            <ul class="service-features">
+              <li>Interactive Prototyping</li>
+              <li>Design Tokens &amp; Style Guides</li>
+              <li>User Flow Research</li>
+            </ul>
+          </article>
+
+          <!-- Service Card 2 -->
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Responsive Web Development</h3>
+            <p class="service-desc">
+              Clean, hand-coded HTML5, modern CSS3 layouts (Grid &amp; Flexbox), and vanilla JavaScript ensuring pixel-perfect fidelity across all screens.
+            </p>
+            <ul class="service-features">
+              <li>Mobile-First Architecture</li>
+              <li>Semantic &amp; Accessible Code</li>
+              <li>Cross-Browser Compatibility</li>
+            </ul>
+          </article>
+
+          <!-- Service Card 3 -->
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.5v-3.5h3l-4-6v3.5H9l4 6z"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Speed &amp; Core Web Vitals</h3>
+            <p class="service-desc">
+              Lightning fast load times, optimized image pipelines, and minimal script payloads to ensure straight-A Lighthouse performance scores.
+            </p>
+            <ul class="service-features">
+              <li>Under 1s Page Load Times</li>
+              <li>Asset &amp; Font Compression</li>
+              <li>SEO Semantic Structure</li>
+            </ul>
+          </article>
+
+          <!-- Service Card 4 -->
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1.003 1.003 0 0 0 20 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+              </svg>
+            </div>
+            <h3 class="service-title">E-Commerce Experiences</h3>
+            <p class="service-desc">
+              Friction-free product catalogs, intuitive shopping carts, and conversion-optimized checkout sequences that maximize cart sizes.
+            </p>
+            <ul class="service-features">
+              <li>High-Conversion Checkout</li>
+              <li>Interactive Product Filters</li>
+              <li>Payment Gateway Flow</li>
+            </ul>
+          </article>
+
+          <!-- Service Card 5 -->
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Brand Identity &amp; Systems</h3>
+            <p class="service-desc">
+              Comprehensive brand design including typography pairing, color psychology, vector icon packs, and reusable style guidelines.
+            </p>
+            <ul class="service-features">
+              <li>Harmonious Color Scales</li>
+              <li>Custom Typography Standards</li>
+              <li>Brand Assets &amp; Guidelines</li>
+            </ul>
+          </article>
+
+          <!-- Service Card 6 -->
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Maintenance &amp; Support</h3>
+            <p class="service-desc">
+              Continuous performance checks, regular security monitoring, scheduled content updates, and analytics tracking.
+            </p>
+            <ul class="service-features">
+              <li>Monthly Health Audits</li>
+              <li>Version Control Backups</li>
+              <li>Conversion Tracking</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us / Problem & Value Proposition -->
+    <section class="section" id="about" aria-labelledby="why-title">
+      <div class="container why-us-grid">
+        <div>
+          <span class="badge">Why Choose Us</span>
+          <h2 id="why-title" class="section-title">Built for Performance, Engineered for Results</h2>
+          <p class="section-subtitle">
+            Most agency websites look flashy but perform sluggishly. We prioritize the foundational web standards that keep users engaged and conversions high.
+          </p>
+
+          <div class="why-features">
+            <div class="why-feature-item">
+              <div class="why-feature-icon">1</div>
+              <div>
+                <h3 class="why-feature-title">Pure, Lightweight Code</h3>
+                <p class="why-feature-desc">We avoid bloated templates. Clean CSS and vanilla JavaScript ensure instant loading and zero technical debt.</p>
+              </div>
+            </div>
+
+            <div class="why-feature-item">
+              <div class="why-feature-icon">2</div>
+              <div>
+                <h3 class="why-feature-title">Mobile-First Responsiveness</h3>
+                <p class="why-feature-desc">Tested rigorously across modern mobile viewports, tablets, laptops, and ultra-wide desktop monitors.</p>
+              </div>
+            </div>
+
+            <div class="why-feature-item">
+              <div class="why-feature-icon">3</div>
+              <div>
+                <h3 class="why-feature-title">Transparent Communication</h3>
+                <p class="why-feature-desc">Direct sprint updates, dedicated staging URLs, and documented milestones from day one.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-card-box">
+          <div class="stat-item">
+            <h3>99.9%</h3>
+            <p>Average uptime &amp; stability across deployed client sites</p>
+          </div>
+          <div class="stat-item">
+            <h3>&lt; 0.8s</h3>
+            <p>Median First Contentful Paint (FCP) benchmark</p>
+          </div>
+          <div class="stat-item">
+            <h3>100%</h3>
+            <p>Responsive &amp; WCAG AA accessible compliance</p>
+          </div>
+          <div class="stat-item">
+            <h3>24/7</h3>
+            <p>Dedicated post-launch technical support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section section-subtle" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Social Proof</span>
+          <h2 id="testimonials-title" class="section-title">What Our Clients Say</h2>
+          <p class="section-subtitle">
+            Hear from founders and marketing teams who transformed their digital presence with Lumina.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <!-- Testimonial 1 -->
+          <article class="testimonial-card">
+            <div class="testimonial-rating" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "Lumina transformed our sluggish corporate website into a lightning-fast responsive platform. Our inbound client inquiries doubled within the first month after release."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SK</div>
+              <div>
+                <div class="author-name">Suresh Kumar</div>
+                <div class="author-role">Founder, Zenit Systems</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="testimonial-card">
+            <div class="testimonial-rating" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "The attention to visual hierarchy and mobile performance was remarkable. They delivered clean code that our internal developers had no trouble maintaining."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AP</div>
+              <div>
+                <div class="author-name">Ananya Patel</div>
+                <div class="author-role">Head of Marketing, CloudNest</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="testimonial-card">
+            <div class="testimonial-rating" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "Outstanding design taste and spotless execution. The responsive form validation and interactive components worked seamlessly out of the box."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">RM</div>
+              <div>
+                <div class="author-name">Rahul Mehta</div>
+                <div class="author-role">Product Lead, Nexa Logistics</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Project Inquiry Section -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-section-grid">
+        
+        <div class="contact-info-panel">
+          <span class="badge">Let's Connect</span>
+          <h2 id="contact-title" class="section-title">Ready to Elevate Your Web Presence?</h2>
+          <p>
+            Tell us about your project goals, timelines, and requirements. We'll prepare a tailored proposal and schedule an introductory strategy call.
+          </p>
+
+          <div class="contact-direct-items">
+            <div class="contact-direct-item">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+              <span>hello@luminacreative.agency</span>
+            </div>
+            <div class="contact-direct-item">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+              <span>+91 (080) 4567-8900</span>
+            </div>
+            <div class="contact-direct-item">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+              <span>Indiranagar 100ft Rd, Bengaluru, KA 560038</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Validated Inquiry Form -->
+        <div class="inquiry-form-card">
+          <form id="inquiry-form" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="client-name" class="field-label">Your Name <span style="color: #ef4444;">*</span></label>
+                <input type="text" id="client-name" name="client-name" class="field-input" placeholder="e.g. Ramesh Varma" required>
+              </div>
+
+              <div class="form-field">
+                <label for="client-email" class="field-label">Work Email <span style="color: #ef4444;">*</span></label>
+                <input type="email" id="client-email" name="client-email" class="field-input" placeholder="ramesh@company.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="client-phone" class="field-label">Phone Number</label>
+                <input type="tel" id="client-phone" name="client-phone" class="field-input" placeholder="+91 98765 43210">
+              </div>
+
+              <div class="form-field">
+                <label for="service-type" class="field-label">Service Required <span style="color: #ef4444;">*</span></label>
+                <select id="service-type" name="service-type" class="field-select" required>
+                  <option value="">Select a service...</option>
+                  <option value="UI & UX Design">UI &amp; UX Product Design</option>
+                  <option value="Responsive Web Development">Responsive Web Development</option>
+                  <option value="Speed & Core Web Vitals">Speed &amp; Core Web Vitals Optimization</option>
+                  <option value="E-Commerce Solutions">E-Commerce Experience</option>
+                  <option value="Full Website Redesign">Full Website Redesign</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="project-details" class="field-label">Project Overview &amp; Timeline <span style="color: #ef4444;">*</span></label>
+              <textarea id="project-details" name="project-details" class="field-textarea" placeholder="Briefly describe your business, key project deliverables, and estimated launch date..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Send Project Brief &rarr;
+            </button>
+
+            <div id="form-alert" class="form-alert" role="alert"></div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <span class="brand-icon">L</span>
+            <span>Lumina Creative</span>
+          </div>
+          <p>
+            An independent digital design and development agency dedicated to building high-converting, responsive web platforms.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">Why Lumina</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">UI/UX Design</a></li>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">Performance Audit</a></li>
+            <li><a href="#services">E-Commerce</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Business Hours</h4>
+          <ul class="footer-links">
+            <li>Monday – Friday: 9am – 7pm IST</li>
+            <li>Saturday: 10am – 4pm IST</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Lumina Creative Agency Pvt Ltd. All rights reserved.</p>
+        <p>Created for WeIntern Web Development Internship - Week 1 Assignment.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
